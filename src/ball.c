@@ -3,6 +3,8 @@
 static Ball ball;
 
 void ball_init() {
+    ball.x;
+    
     // TODO: posicionar la pelota al centro y darle velocidad inicial
 }
 

@@ -15,23 +15,26 @@ void ball_update() {
     ball.x += ball.ax;
     ball.y += ball.ay;
 
+    //pared izquierda
     if (ball.x - ball.radius < 0) {//Cada if es una pared distinta creo :(....
         ball.x = ball.radius;
         ball.ax *= -1;
-    }//Esta es la pared izquierda
+    }
 
-    if (ball.x + ball.radius > 800)//Pared derecha
-    {
-        ball.x = 800 - ball.radius;
+    //Pared derecha
+    if (ball.x + ball.radius > 800){
         ball.x = 800 - ball.radius;
         ball.ax *= -1;
-    }//pared de arriba
+    }
+    
+    //pared de arriba
     if (ball.y - ball.radius < 0) {
         ball.y = ball.radius;
         ball.ay *= -1;
     }
 
-    if (ball.y + ball.radius > 600) { //Pared de abajo
+    //Pared de abajo
+    if (ball.y + ball.radius > 600) { 
         ball.y = 600 - ball.radius;
         ball.ay *= -1;
     }

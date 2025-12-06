@@ -3,7 +3,8 @@
 
 typedef struct 
 {
-    int x, y, ax, ay;
+    float x, y;
+    float ax, ay;
     float radius; 
 }Ball;
 //error fatal

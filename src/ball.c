@@ -20,7 +20,7 @@ void ball_update() {
         ball.ax *= -1;
     }//Esta es la pared izquierda
 
-    if (ball.x + ball.radius < 0)//Pared derecha
+    if (ball.x + ball.radius > 800)//Pared derecha
     {
         ball.x = 800 - ball.radius;
         ball.x = 800 - ball.radius;

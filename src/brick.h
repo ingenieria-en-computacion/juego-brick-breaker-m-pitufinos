@@ -7,9 +7,9 @@
 typedef struct
 {
     int active;
-} Bricks;
+} Brick;
 
 void bricks_init();
-Bricks (*bricks_get())[BRICK_COLS];
+Brick (*bricks_get())[BRICK_COLS];
 void brick_destroy(int row, int col);
 #endif

@@ -4,6 +4,7 @@
 typedef struct 
 {
     int x, y, ax, ay;
+    float radius; 
 }Ball;
 //error fatal
 void ball_update();
